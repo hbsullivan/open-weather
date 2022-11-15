@@ -28,7 +28,7 @@ function printError(request, city) {
 
 function printElements(apiResponse, city) {
   document.querySelector('#showResponse').innerText = `The humidity in ${city} is ${apiResponse.main.humidity}%.
-  The temperature in Farenheit is ${apiResponse.main.temp} degrees. The skies are ${apiResponse.weather[0].main}.`;
+  The temperature in Farenheit is ${apiResponse.main.temp} degrees. The skies are ${apiResponse.weather[0].main}. Country ${apiResponse.sys.country}`;
 }
 
 function handleFormSubmission(event) {
